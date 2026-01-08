@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(https://img.freepik.com/free-vector/geometric-science-education-background-vector-gradient-blue-digital-remix_53876-125993.jpg?semt=ais_hybrid&w=740&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+}
+
+button {
+    width: 300px;
+    height: 80px;
+    border-radius: 50px;
+    border: none;
+
+    background-color: yellow;
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: aqua;
+    color: blue;
+}
+
+@media (max-width: 425px) {
+
+    .wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .box1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 200px;
+    }
+
+    .box1 img {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 180px;
+        height: 180px;
+    }
+
+    .box {
+        width: 100%;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .card {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .card img {
+        width: 45px;
+        height: 45px;
+    }
+
+    button {
+        width: 200px;
+        height: 60px;
+        font-size: 16px;
+    }
+}
